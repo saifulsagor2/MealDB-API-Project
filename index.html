@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🍽️ Meal Finder</h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search meals...">
+            <button onclick="searchMeals()">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="meal-section">
+            <div id="meal-container" class="meal-container"></div>
+        </section>
+
+        <aside class="cart-section">
+            <h3>My Meal Group (<span id="cart-count">0</span>)</h3>
+            <div id="cart-container" class="cart-container"></div>
+        </aside>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
